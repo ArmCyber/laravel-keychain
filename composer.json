@@ -1,0 +1,24 @@
+{
+    "name": "armcyber/keychain",
+    "description": "Secure Keychain Service for Laravel.",
+    "license": "MIT",
+    "minimum-stability": "dev",
+    "require": {
+        "php": "^8.2",
+        "ext-sodium": "*",
+        "ext-json": "*",
+        "laravel/framework": "^11.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "ArmCyber\\Keychain\\": "src"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "ArmCyber\\Keychain\\KeychainServiceProvider"
+            ]
+        }
+    }
+}
